@@ -2,8 +2,8 @@
 
 
                              # Kontrollerar om det är en admin
-if [ $UID !=0 ]; then 
-echo "Tjena Admin. (:"
+if [ $UID != 0 ]; then 
+echo "Välkommen (:"
 exit
 
 fi
@@ -15,20 +15,20 @@ useradd -m $användare
 
                               #skapar mappar 
                               
-mkdir /home/$användare/Chasacademy
-mkdir /home/$användare/Github
-mkdir /home/$användare/Virtualbox
+mkdir /home/$användare/Dokuments
+mkdir /home/$användare/Download
+mkdir /home/$användare/Work
 
                               #skapar en fil
 
-echo "välkommen tillbaka!" > /home/$användare/textfil.txt
+echo "välkommen tillbaka!" > /home/$användare/welcome.txt
 
 
                               #Rättigheter r,w,e
                               
-chmod 700 /home/$användare/Chasacademy
-chmod 700 /home/$användare/Github
-chmod 700 /home/$användare/Virtualbox
+chmod 700 /home/$användare/Dokuments
+chmod 700 /home/$användare/Download
+chmod 700 /home/$användare/Work
 
 
 
